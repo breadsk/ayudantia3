@@ -5,6 +5,7 @@ def menu():#void
     print("1. Guardar pelicula")
     print("2. Mostrar peliculas")
     print("3. Buscar pelicula")
+    print("4. Editar pelicula")
     print("4. Salir")
 
 def validar_no_vacio(mensaje,valor_validado):#return
@@ -13,4 +14,4 @@ def validar_no_vacio(mensaje,valor_validado):#return
         if dato == "":
             print(f"No se permiten valores vacios ('{valor_validado}') , intente nuevamente")
         else:
-            return dato.lower()
+            return dato
