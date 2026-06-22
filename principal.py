@@ -34,10 +34,11 @@ while not salir:
             nombre_pelicula_a_guardar = validar_no_vacio("Ingrese el nombre de la pelicula: ","nombre")                        
             año_pelicula_a_guardar = validar_no_vacio("Ingrese el año de la pelicula: ","año")        
             categoria_pelicula_a_guardar = validar_no_vacio("Ingrese la categoria de la pelicula: ","categoria")
+
             cantidad_actores = int(input("Ingrese la cantidad de actores que desea guardar: "))
 
             for cant in range(cantidad_actores):
-                nombre_actor = input("Ingrese el actor: ")
+                nombre_actor = input("Ingrese el actor: ").strip().lower()
                 actores.append(nombre_actor)
 
             pelicula = {
