@@ -6,7 +6,7 @@ def menu():#void
     print("2. Mostrar peliculas")
     print("3. Buscar pelicula")
     print("4. Editar pelicula")
-    print("4. Salir")
+    print("5. Salir")
 
 def validar_no_vacio(mensaje,valor_validado):#return
     while True:

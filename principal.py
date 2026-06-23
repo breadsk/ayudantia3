@@ -31,9 +31,9 @@ while not salir:
         print("Solo se permiten numeros en la opcion, intente nuevamente")
     else:
         if opcion == 1:
-            nombre_pelicula_a_guardar = validar_no_vacio("Ingrese el nombre de la pelicula: ","nombre")                        
-            año_pelicula_a_guardar = validar_no_vacio("Ingrese el año de la pelicula: ","año")        
-            categoria_pelicula_a_guardar = validar_no_vacio("Ingrese la categoria de la pelicula: ","categoria")
+            nombre_pelicula_a_guardar = validar_no_vacio("Ingrese el nombre de la pelicula: ","nombre pelicula")                        
+            año_pelicula_a_guardar = validar_no_vacio("Ingrese el año de la pelicula: ","año pelicula")        
+            categoria_pelicula_a_guardar = validar_no_vacio("Ingrese la categoria de la pelicula: ","categoria pelicula")
 
             cantidad_actores = int(input("Ingrese la cantidad de actores que desea guardar: "))
 
@@ -80,7 +80,7 @@ while not salir:
             # Solicitar el índice de la película a editar
             try:
                 indice = int(input("\nIngrese el numero de la pelicula que desea editar: "))
-                if indice < 1 or indice > len(peliculas):
+                if indice < 1 or indice >= len(peliculas):
                     print("Numero de pelicula no valido")
                     continue
                 
